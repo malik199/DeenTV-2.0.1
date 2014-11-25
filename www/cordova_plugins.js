@@ -28,6 +28,13 @@ module.exports = [
         "clobbers": [
             "Connection"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "clobbers": [
+            "window.open"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -35,7 +42,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.device": "0.2.12",
     "com.pushwoosh.plugins.pushwoosh": "3.4.0",
-    "org.apache.cordova.network-information": "0.2.13"
+    "org.apache.cordova.network-information": "0.2.13",
+    "org.apache.cordova.inappbrowser": "0.5.3"
 }
 // BOTTOM OF METADATA
 });
