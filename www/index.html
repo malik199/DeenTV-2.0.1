@@ -34,7 +34,6 @@
       </div>
     </div>
     <div id="wrapper">
- 
         <ul id="list_videos" data-role="listview" data-inset="true">
           <li ng-repeat="item in realTimeData | filter: mySearch | orderBy: sortOrder"><a ng-click="playvideo(item)"> <img ng-src="{{item.thumbnail}}" class="ui-li-thumb">
             <h2 class="list_title" ng-bind-html="item.title | unsafe "></h2>
