@@ -1,11 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="tv.deen.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.deen.tv" version="2.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="SplashScreen" value="screen"/>
+    <feature name="LocalStorage">
+        <param name="android-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="CDVDevice" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" value="PushNotification" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="CDVConnection" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="CDVInAppBrowser" />
+    </feature>
     <name>DeenTV</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        DeenTV App for Android
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="info@deen.tv" href="http://www.deen.tv">
+        Malik Ahmad
     </author>
     <content src="index.html" />
     <access origin="*" />

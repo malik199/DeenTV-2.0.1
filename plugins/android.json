@@ -39,11 +39,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<permission android:name=\"tv.deen.app.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "xml": "<permission android:name=\"com.deen.tv.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
                             "count": 1
                         },
                         {
-                            "xml": "<uses-permission android:name=\"tv.deen.app.permission.C2D_MESSAGE\" />",
+                            "xml": "<uses-permission android:name=\"com.deen.tv.permission.C2D_MESSAGE\" />",
                             "count": 1
                         },
                         {
@@ -53,7 +53,7 @@
                     ],
                     "/manifest/application/activity": [
                         {
-                            "xml": "<intent-filter><action android:name=\"tv.deen.app.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
+                            "xml": "<intent-filter><action android:name=\"com.deen.tv.MESSAGE\" /><category android:name=\"android.intent.category.DEFAULT\" /></intent-filter>",
                             "count": 1
                         }
                     ],
@@ -75,7 +75,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<receiver android:name=\"com.google.android.gcm.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"tv.deen.app\" /></intent-filter></receiver>",
+                            "xml": "<receiver android:name=\"com.google.android.gcm.GCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"com.deen.tv\" /></intent-filter></receiver>",
                             "count": 1
                         },
                         {
@@ -117,6 +117,10 @@
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -125,16 +129,19 @@
     },
     "installed_plugins": {
         "com.pushwoosh.plugins.pushwoosh": {
-            "PACKAGE_NAME": "tv.deen.app"
+            "PACKAGE_NAME": "com.deen.tv"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "tv.deen.app"
+            "PACKAGE_NAME": "com.deen.tv"
         },
         "org.apache.cordova.inappbrowser": {
-            "PACKAGE_NAME": "tv.deen.app"
+            "PACKAGE_NAME": "com.deen.tv"
         },
         "org.apache.cordova.network-information": {
-            "PACKAGE_NAME": "tv.deen.app"
+            "PACKAGE_NAME": "com.deen.tv"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.deen.tv"
         }
     },
     "dependent_plugins": {}

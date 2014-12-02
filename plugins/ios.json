@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -56,7 +60,7 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": "false",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -84,6 +88,9 @@
             "PACKAGE_NAME": "tv.deen.app"
         },
         "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "tv.deen.app"
+        },
+        "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "tv.deen.app"
         }
     },

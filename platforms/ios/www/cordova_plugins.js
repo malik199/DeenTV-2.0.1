@@ -35,6 +35,13 @@ module.exports = [
         "clobbers": [
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+        "id": "org.apache.cordova.splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -43,7 +50,8 @@ module.exports.metadata =
     "org.apache.cordova.device": "0.2.12",
     "com.pushwoosh.plugins.pushwoosh": "3.4.0",
     "org.apache.cordova.network-information": "0.2.13",
-    "org.apache.cordova.inappbrowser": "0.5.3"
+    "org.apache.cordova.inappbrowser": "0.5.3",
+    "org.apache.cordova.splashscreen": "0.3.4"
 }
 // BOTTOM OF METADATA
 });
